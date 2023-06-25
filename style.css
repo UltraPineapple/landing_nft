@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    /*у Body есть margin*/
+
+    font-family: 'Space Grotesk', sans-serif;
+    /* шрифт */
+
+}
+
+/* Для всех элементов */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* ширина и высота, внутрених элементов подстраивается под каркас */
+}
+
+header {
+    width: 100%;
+    height: 76px;
+    background-color: #fff;
+    border-bottom: 1px solid #F8E0FB;
+    display: flex;
+    /* гибкое выравнивание элемента по горизонтали и вертикали */
+    /* если блоки не помещаются */
+
+
+    /* В правильно порядке отобразить навигацию поможет родительский элемент */
+    justify-content: space-between;
+    /* Равномерное распределение элементов по горизонтали */
+    /* 1 блок - с лева */
+    /* 2 блок - по центру */
+    /* 3 блок - с права */
+
+    align-items: center;
+    /* выравнивание элементов внутри контейнера по горизонтали */
+
+    padding: 0px 70px
+}
+
+header img {
+    width: 151px;
+    height: 40px;
+    /* margin: 18px auto;
+    по центру */
+
+    margin-right: 32px;
+    /* что бы навигация не заезжала на лого */
+}
+
+.menu__wrapper {
+    display: flex;
+    /* что бы расположить ссылки в линиию */
+}
+
+.menu__wrapper a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* растояние между строками */
+
+    color: black;
+    opacity: 0.5;
+
+    text-decoration: none;
+    /* уберает подчёркнутую ссылку */
+
+    display: flex;
+    margin-right: 32px;
+
+    white-space: nowrap;
+    /* когда размер маленький, слова съезжают */
+    /* текст не переносится на новую строку*/
+
+
+}
